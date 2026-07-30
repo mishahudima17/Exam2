@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main class="conteiner">
+            <section class="panel_lewa">
+                <h1>Kalkulator mnożenia</h1>
+                <a href="Link.txt" target="_blank">Link do repozytorium</a>
+
+                <br><br>
+
+                <label for="liczba1">Liczba1:</label>
+                <input type="number" id="liczba1">
+                <select id="dzialanie">
+                    <option value = "*">*</option>
+                </select>
+                <br><br>
+
+                <label for="liczba2">liczba2:</label>
+                <input type="number" id="liczba2">   
+                <br><br>
+                <button id="przycisk">Przelic</button>
+
+            </section>
+
+            <section class="panel_prawa">
+                <div id="wynik"></div>
+            </section>
+        </main>
+        
+        <script>
+            const przycisk = document.getElementById("przycisk");
+            przycisk.addEventListener("click", function() {
+                const liczba1 = parseInt(document.getElementById("liczba1").value);
+                const liczba2 = parseInt(document.getElementById("liczba2").value);
+
+                const dzialanie = document.getElementById("dzialanie");
+                const wynik = document.getElementById("wynik");
+
+                let rezultat;
+
+                wynik.innerHTML = 
+                "Wynik mnozenia: " + liczba1 * liczba2;
+            }
+
+        );
+        </script>
+        
+    </body>
+</html>

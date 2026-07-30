@@ -1,0 +1,27 @@
+section.panel_lewa {
+    height: 900px;
+    width: 400px;
+    float: left;
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", serif;
+    background-color: white;
+}
+
+section.panel_prawa {
+    height: 900px;
+    width: 1900px;
+    float: center;
+    text-align: left;
+    border: 1px solid black;
+}
+
+button {
+    text-decoration: underline;
+}
